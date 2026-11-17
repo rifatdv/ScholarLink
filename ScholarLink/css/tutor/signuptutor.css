@@ -1,0 +1,381 @@
+body {
+  background-color: white;
+  margin: 0;
+}
+* {
+  text-decoration: none;
+}
+/* header part */
+.blank {
+  background-color: white;
+  padding: 60px;
+  z-index: 1;
+}
+
+.contactnum {
+  width: 100%;
+  height: 7vh;
+  position: fixed;
+  margin-top: 70px;
+  display: flex;
+  background: rgba(88, 88, 255, 0.5);
+  backdrop-filter: blur(50px);
+  z-index: 2;
+}
+
+.contactnum img {
+  width: 30px;
+  height: 30px;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+.contactnum h4 {
+  margin-top: 15px;
+  font-size: 1.2em;
+}
+.navbar {
+  position: fixed;
+  width: 100%;
+  height: -100%;
+  background-color: rgba(11, 161, 178, 0.696);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding-right: 15px;
+  padding-left: 15px;
+  /* display: flex; */
+  justify-content: space-between;
+  margin-bottom: 20px;
+  backdrop-filter: blur(50px);
+  z-index: 2;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  transition: 0.3s ease-in;
+}
+
+.main:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  color: rgb(8, 55, 120);
+  font-size: 35px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  color: rgb(23, 70, 108);
+  /* text-shadow: 0 0 25px rgb(216, 86, 0),
+                 0 0 50px rgb(216, 86, 0); */
+  transform: scale(1.1);
+}
+span {
+  color: azure;
+}
+
+.platformname p {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-weight: 100;
+}
+li.info {
+  font-size: 15px;
+  font-family: cursive;
+  list-style: none;
+  display: inline-block;
+  padding-right: 50px;
+}
+
+/* section part */
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  height: 190vh;
+  margin: 15px;
+  background: rgb(59, 65, 62);
+  border-radius: 20px;
+}
+.formback {
+  position: relative;
+  width: 800px;
+  height: 170vh;
+  background-color: rgb(43, 48, 46);
+  border: 3px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: -20%;
+}
+h3 {
+  color: white;
+  font-size: 30px;
+  font-family: "Trebuchet MS";
+  padding-left: 70px;
+}
+.star {
+  color: red;
+  font-size: 1.1em;
+}
+
+.radio_group {
+  display: flex;
+  gap: 25px;
+}
+.radiobtn p {
+  margin-left: -10px;
+}
+.radio_group label {
+  color: white;
+  font-size: 15px;
+  min-width: 80px;
+  min-height: 30px;
+  margin-left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+p {
+  color: white;
+  font-size: 1.2em;
+  display: flex;
+}
+
+.radio_group input:checked + .radio_label {
+  background: rgb(0, 194, 19);
+  color: black;
+  border-color: rgb(0, 194, 19);
+}
+
+.radio_group input {
+  display: none;
+}
+
+.inputbox {
+  padding-top: 10%;
+  width: 120%;
+  margin-left: -10px;
+}
+.inputbox label {
+  color: white;
+  font-size: 1.3em;
+  margin-top: 5%;
+}
+.inputbox input {
+  margin: 5% 0 2% 0%;
+  width: 94%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid white;
+  color: white;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-bottom: 2%;
+  font-size: 1em;
+}
+.inputbox span {
+  color: red;
+}
+.inputbox span.error {
+  padding-left: 3%;
+}
+
+.radiobtn span {
+  color: red;
+}
+/* .inputbox input:focus~label,
+.inputbox input:valid~label{
+    top: -5px;
+} 
+
+.inputbox input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: white;
+}*/
+
+.check {
+  color: white;
+  margin-bottom: 20px;
+  margin-left: -15px;
+}
+
+input[type="checkbox"] {
+  accent-color: green;
+}
+
+button {
+  width: 40%;
+  height: 40px;
+  margin-left: 15px;
+  background: white;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 1em;
+  color: black;
+  font-weight: 500;
+  font-family: "Trebuchet MS";
+  display: inline-block;
+}
+.submit {
+  margin-left: 40px;
+}
+
+/* .button input{
+    background-color: white;
+    color: black;
+    border: none;
+    outline: none;
+    justify-content: space-between;
+    font-size: 1em;
+
+} */
+
+button:hover {
+  width: 40%;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  cursor: pointer;
+  color: white;
+}
+.reset:hover {
+  background: red;
+}
+.submit:hover {
+  background: green;
+}
+.signinopt a {
+  color: white;
+  font-weight: 600;
+}
+.signinopt a:hover {
+  color: green;
+}
+
+/* footer part */
+.bottom {
+  width: 100%;
+  height: auto;
+  background-color: rgba(90, 0, 147, 0.782);
+  margin-bottom: -33px;
+}
+.botdesign {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.use {
+  margin: 2% 2% 1% 3%;
+  width: 20%;
+  flex: 1 1 200px;
+  align-items: center;
+}
+.use h2 {
+  padding: 4% 3% 1% 3%;
+  font-size: 1.6em;
+  color: white;
+}
+.use-body li {
+  list-style: none;
+  font-size: 1.2em;
+  transition: all 1.5s;
+  a {
+    color: white;
+  }
+}
+.use-body li:hover {
+  transform: translateX(8%);
+}
+.social {
+  margin: 2% 3% 1% 3%;
+  width: 20%;
+}
+.social-body ul {
+  display: flex;
+}
+.social-body li {
+  list-style: none;
+  font-size: 1.2em;
+  transition: all 2s;
+  a {
+    color: white;
+  }
+}
+.social-body li a:hover {
+  color: green;
+}
+.social-body img {
+  width: 40%;
+  height: 55%;
+  border-radius: 20%;
+}
+
+.social-body img:hover {
+  transform: scale(1.2);
+}
+
+.join-body img {
+  margin: 0 0 0 5%;
+  width: 35%;
+  height: 18%;
+  padding: 1.5%;
+  border-radius: 15px;
+  transition: all 2s;
+}
+.join-body img:hover {
+  transform: scale(1.2);
+}
+.down-body img {
+  margin: 0 0 0 3%;
+  width: 40%;
+  height: 20%;
+  padding: 1.5%;
+  border-radius: 15px;
+  transition: all 2s;
+}
+.down-body img:hover {
+  transform: scale(1.2);
+}
+.use p {
+  color: white;
+  font-size: 1.2em;
+  margin: 0 0 2% 5%;
+}
+.add-body p {
+  color: white;
+  font-size: 1em;
+  margin: 2% 0 1% 6%;
+}
+.webver {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+  text-align: center;
+}
+.copy h4 {
+  color: black;
+  font-size: 1.5em;
+  text-align: center;
+  padding-bottom: 5px;
+}

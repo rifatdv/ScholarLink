@@ -1,0 +1,287 @@
+body{
+    background-color: white;
+    margin: 0;
+}
+*{
+    text-decoration: none;
+}
+
+/* header part */
+.blank{
+    background-color: white;
+    padding: 35px;
+    z-index: 1;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    background-color: rgb(26, 42, 128);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* display: flex; */
+    justify-content: space-between;
+    margin-bottom: 20px;
+    backdrop-filter: blur(50px);
+    z-index: 2;
+}
+
+.navdiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main{
+    transition: 0.3s ease-in;
+}
+
+.main:hover{
+    transform: scale(1.1);
+}
+.main a{
+    color: azure;
+}
+.logo{
+        font-size: 35px;
+        font-weight: 600;
+        transition: 0.3s ease;
+}
+.logo:hover{
+    /* text-shadow: 0 0 25px rgb(216, 86, 0),
+                 0 0 50px rgb(216, 86, 0); */
+    transform: scale(1.1);
+    
+}
+span{
+    color:azure ;
+}
+
+.platformname p{
+        color: azure;
+        font-size: 10px;
+        font-weight: 100;
+        
+}
+li.info{
+    color: azure;
+    font-size: 15px;
+    font-family: cursive;
+    list-style: none;
+    display: inline-block;
+    padding-right: 50px;
+}
+
+/* section part */
+section{
+    background: white;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+}
+
+.navdesign{
+    background: rgb(59,65,62);
+    width: 250px;
+    height: 90vh;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.navhead{
+    text-align: center;
+}
+.imageclass{
+    width: 96%;
+    height: 18vh;
+    margin: 10% 0% 2% 0%;
+    padding: 2%;
+}
+.image{
+    background-color: black;
+    border: 5px solid black;
+    width: 50%;
+    height: 18vh;
+    border-radius: 50%;
+    margin-left: 24%;
+    overflow: hidden;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+}
+.g_info p{
+    color: white;
+    text-align: center;
+}
+hr{
+    min-width: 10px;
+    max-width: 240px;
+}
+.navbody{
+    margin-top: 30px;
+    
+}
+.dash{
+    display: flex;
+    transition: all 2s;
+}
+
+.dash img{
+    width: 18px;
+    height: 18px;
+    padding-left: 30px;
+    padding-top: 4px;
+}
+.dash a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.dash a:hover{
+    transform: translateX(10px);
+}
+.body-head{
+    position: fixed;
+    margin-left: 260px;
+    margin-right: 3%;
+    width: 20%;
+    height: 37vh;
+    background: rgba(176,216,230,0.4);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.pass{
+    margin: 7% 7% 7% 7%;
+    display: flex;
+    padding: 10%;
+    background: white;
+    border-radius: 20px;
+}
+.pass img{
+    width: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.pass button{
+    width: 60%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.pass a{
+    margin-top: -2px;
+    font-size: 1.6em;
+    padding: 30px;
+    font-family: system-ui;
+    color: black;
+}
+.pass:hover{
+    border: 2px solid rgb(138, 200, 223);
+    background: white;
+}
+.accdel{
+    margin: 5% 7% 7% 7%;
+    display: flex;
+    border: 2px solid rgb(138, 200, 223);
+    background: rgb(138, 200, 223);
+    border-radius: 20px;
+    padding: 10%;
+}
+.accdel img{
+    width: 14%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.accdel button{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.accdel a{
+    margin-top: -2px;
+    font-size: 1.6em;
+    padding: 10px;
+    font-family: system-ui;
+    color: black;
+}
+.accdel:hover{
+    border: 2px solid rgb(138, 200, 223);
+    background-color: white;
+}
+.passfield{
+    margin-left: 38%;
+    width: 52.5%;
+    height: 75vh;
+    background-color: rgba(176,216,230,0.4);
+    border-radius: 15px;
+    padding: 3% 4% 0 4%;
+    display: flex;
+}
+.passchange{
+    width: 40%;
+    height: 70vh;
+}
+.passchange h2{
+    font-size: 1.6em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-bottom: 3%;
+}
+.cnrpass{
+    padding-left: 2%;
+    padding-bottom: 2%;
+}
+.cnrpass h4{
+    font-size: 1.2em;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.cnrpass span{
+    color: red;
+}
+.cnrpass input{
+    width: 80%;
+    height: 4vh;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    /* border-radius: 12px; */
+    color: black;
+    padding-left: 2%;
+    border-bottom: 2px solid black;
+}
+.passchange button{
+    width: 30%;
+    padding: 6px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 1.2em;
+    font-family: system-ui;
+    border: 1.5px solid black;
+    margin-left: 53%;
+    margin-top: 2%;
+}
+.passchange button:hover{
+    background-color: rgb(138, 200, 223);
+}
+.passfield img{
+    width: 45%;
+    height: 85%;
+    padding-left: 5%;
+    padding: 2% 0 5% 10%;
+}
+.cpass{
+    display: flex;
+}
+.cpass p{
+    margin-top: -5px;
+    margin-left: -20px;
+}
+/* footer part */
+

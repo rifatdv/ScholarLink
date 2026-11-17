@@ -1,0 +1,484 @@
+body {
+  background-color: rgb(245, 237, 227);
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgba(11, 161, 178, 0.696);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between; /* left and right */
+  align-items: center;
+  margin-bottom: 20px;
+}
+.show ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  transition: 0.3s ease-in;
+}
+.main:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  color: rgb(8, 55, 120);
+  font-size: 35px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  color: rgb(23, 70, 108);
+  transform: scale(1.1);
+}
+
+span {
+  color: azure;
+}
+
+.platformname p {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-weight: 100;
+}
+
+li.info {
+  font-size: 15px;
+  font-family: cursive;
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: 100px;
+}
+
+.home {
+  background-color: rgb(5, 3, 59);
+  padding: 50px 50px;
+  border-radius: 30px;
+  margin-bottom: 20px;
+}
+
+.home-content h3 {
+  color: aliceblue;
+  font-family: "Segoe UI";
+  font-size: 50px;
+  font-weight: 500;
+  padding-left: 10px;
+}
+
+.home-content p {
+  color: rgb(255, 196, 0);
+  font-family: "Gill Sans MT";
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.btn-box {
+  width: 300px;
+  display: flex;
+  gap: 2em;
+  padding-left: 25px;
+  transition: all 2s;
+  margin-bottom: 20px;
+}
+
+.btn-1,
+.btn-2 {
+  padding: 5px 20px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: Cochin, Georgia, Times, "Times New Roman", serif;
+  border: 2px solid transparent;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+.btn-1:hover {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  border-radius: 40px;
+  transform: scale(1.2);
+}
+.btn-2:hover {
+  background-color: crimson;
+  color: white;
+  border: 2px solid crimson;
+  border-radius: 40px;
+  transform: scale(1.2);
+}
+a.signin {
+  color: black;
+}
+
+.slider {
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.slide-track {
+  display: flex;
+  animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateZ();
+  }
+  100% {
+    transform: translateX(calc(-250px * 4));
+  }
+}
+
+.slide {
+  height: 200px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+img {
+  width: 100%;
+  transition: transform 1s;
+}
+img:hover {
+  transform: translateZ(15px);
+}
+
+/* Sidebar */
+.sidebardash {
+  margin-top: 30px;
+  width: 250px;
+  background: #d8c8b8;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sidebardash nav ul {
+  list-style: none;
+  a {
+    color: #000;
+  }
+}
+.sidebardash nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  margin-left: -50px;
+  font-weight: bold;
+}
+.sidebardash nav ul li:hover {
+  background: #dcdfe2;
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+/* Content 
+.content {
+  flex: 1;
+  padding: 20px;
+}
+.notice {
+  background: #d8c8b8;
+  padding: 7px;
+  border-radius: 10px;
+  margin-left: 300px; 
+  width: 88%; 
+  height: auto; 
+  word-wrap: break-word; 
+}
+*/
+/* ========================================= */
+/* DASHBOARD LAYOUT & CONTENT          */
+/* ========================================= */
+
+/* Main layout container for sidebar and content */
+.main-content-area {
+  display: flex;
+  align-items: flex-start; /* Aligns items to the top */
+  gap: 20px; /* Space between sidebar and content */
+  padding: 0 20px 20px;
+}
+
+/* New container for the right-side content column */
+.content-column {
+  flex: 1; /* Takes up all remaining space */
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  gap: 20px; /* Space between notice board and stats */
+}
+
+/* Update the notice board to remove old margins */
+.notice {
+  background: #d8c8b8; /* Changed background for better contrast */
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  margin-left: 0; /* REMOVE old margin */
+  width: 100%; /* Make it fill the content-column */
+}
+
+.notice h3 {
+  margin-top: 0;
+}
+
+/* ========================================= */
+/* STATS CARDS                   */
+/* ========================================= */
+
+/* Main container for the row of cards */
+.stats-container {
+  display: flex; /* Arranges cards in a row */
+  gap: 20px; /* Space between each card */
+  flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+/* Styling for each individual card */
+.stat-card {
+  background-color: #d8c8b8;
+  border-radius: 12px;
+  padding: 20px;
+  flex: 1; /* Allows cards to grow and share space */
+  min-width: 150px; /* Minimum width before wrapping */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Styling for the icon circle */
+.stat-icon {
+  font-size: 24px;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eef7ff; /* Default background */
+  color: #3b82f6; /* Default icon color */
+}
+
+/* Styling for the text part of the card */
+.stat-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #1e293b;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #64748b;
+}
+
+.profile {
+  width: 200px;
+  background: #1b1438;
+  color: rgb(245, 245, 245);
+  padding: 20px;
+}
+img.profileimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.job-postings-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 100%;
+  align-items: stretch;
+}
+
+.job-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #d8c8b8;
+  border: 1px solid #d1e9ff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  height: 100%;
+}
+.job-card-content {
+  position: relative;
+  z-index: 2;
+}
+.job-card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e293b;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.jpg-meta {
+  font-size: 13px;
+  color: #000000;
+  display: flex;
+  gap: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e2e8f0;
+  margin-bottom: 15px;
+}
+.job-meta span b {
+  color: #000;
+}
+.job-details-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  font-size: 14px;
+  color: #334155;
+  margin-bottom: 15px;
+}
+.job-details-grid span b {
+  color: #000;
+}
+.job-preference {
+  margin-bottom: 20px;
+}
+
+.job-preference span {
+  font-size: 13px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  color: #000;
+}
+
+.female-tutor {
+  font-weight: bold;
+  color: #9b2c2c;
+}
+
+.any-tutor {
+  background-color: #e2e8f0;
+  color: #4a5568;
+}
+
+.job-actions {
+  display: flex;
+  gap: 20px;
+  border-top: 1px solid #e2e8f0;
+  padding-top: 15px;
+}
+
+.job-actions a {
+  font-size: 14px;
+  font-weight: bold;
+  color: #111111;
+  text-decoration: none;
+}
+
+.job-actions a:hover {
+  text-decoration: underline;
+}
+.bottom {
+  background-color: #e0c8b2;
+  padding: 50px 20px;
+}
+
+.botdesign {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center;
+}
+
+/* Section titles */
+.botdesign h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Sub-titles like ScholarLink */
+.botdesign h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Footer text & links */
+.botdesign a,
+.botdesign p,
+.botdesign li {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Hover effect on links */
+.botdesign a:hover {
+  color: #222;
+  transform: translateX(8px);
+  transition: all 0.3s ease;
+}
+
+/* Social icons */
+.botdesign img.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px auto;
+  display: block;
+}
+
+/* App download images */
+.botdesign img.joinimg {
+  width: 120px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Bottom text */
+.version,
+.copyright {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+}

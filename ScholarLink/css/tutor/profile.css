@@ -1,0 +1,306 @@
+body {
+  background-color: rgb(245, 237, 227);
+}
+
+* {
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: rgba(11, 161, 178, 0.696);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.show ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.show li {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main {
+  transition: 0.3s ease-in;
+}
+.main:hover {
+  transform: scale(1.1);
+}
+
+.logo {
+  color: rgb(8, 55, 120);
+  font-size: 35px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  color: rgb(23, 70, 108);
+  transform: scale(1.1);
+}
+
+span {
+  color: azure;
+}
+
+.platformname p {
+  color: rgb(0, 0, 0);
+  font-size: 10px;
+  font-weight: 100;
+}
+
+li.info {
+  font-size: 15px;
+  font-family: cursive;
+  list-style: none;
+  display: inline-block;
+  padding-right: 10px;
+  margin-right: 100px;
+}
+
+/* Sidebar */
+.main-content-area {
+  display: flex;
+  gap: 20px;
+}
+.sidebardash {
+  margin-top: 30px;
+  width: 250px;
+  background: #d8c8b8;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+}
+.sidebardash nav ul {
+  list-style: none;
+}
+.sidebardash nav ul a {
+  color: #000;
+}
+.sidebardash nav ul li {
+  padding: 10px;
+  cursor: pointer;
+  margin-left: -50px;
+  font-weight: bold;
+}
+.sidebardash nav ul li:hover {
+  background: #dcdfe2;
+  border-radius: 5px;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+img.profileimg {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.bottom {
+  background-color: #e0c8b2;
+  padding: 50px 20px;
+}
+
+.botdesign {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 60px;
+  text-align: center;
+}
+
+/* Section titles */
+.botdesign h4 {
+  font-size: 24px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 15px;
+}
+
+/* Sub-titles like ScholarLink */
+.botdesign h5 {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+}
+
+/* Footer text & links */
+.botdesign a,
+.botdesign p,
+.botdesign li {
+  color: black;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Hover effect on links */
+.botdesign a:hover {
+  color: #222;
+  transform: translateX(8px);
+  transition: all 0.3s ease;
+}
+
+/* Social icons */
+.botdesign img.image {
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin: 5px auto;
+  display: block;
+}
+
+/* App download images */
+.botdesign img.joinimg {
+  width: 120px;
+  height: 50px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* Bottom text */
+.version,
+.copyright {
+  color: black;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+/* Profile + Info Layout */
+.profile-container {
+  display: flex;
+  gap: 20px;
+
+  flex-grow: 1;
+  margin: 30px 20px;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+}
+
+/* Left Profile Card */
+.profile-card {
+  flex: 1;
+  width: 200px;
+  height: 500px;
+  background: #f1f6ff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.profile-card .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto 15px;
+}
+.profile-card h3 {
+  font-size: 1.2em;
+  margin: 5px 0;
+}
+.profile-card p {
+  font-size: 0.95em;
+  color: #444;
+}
+.profile-card button {
+  margin: 20px 0;
+  width: 100%;
+  padding: 8px;
+  background: #615dfa;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.profile-card button a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+.profile-card button:hover {
+  background: #4d48c7;
+}
+
+.profile-card .info {
+  margin-top: auto;
+  text-align: left;
+}
+.submit a {
+  border: 2px solid#0ba1b2;
+  border-radius: 3px;
+  background-color: #0ba1b2;
+  color: #f1f6ff;
+}
+.profile-card .info .line {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.95em;
+  margin: 8px 0;
+}
+.profile-card .info img {
+  width: 18px;
+  height: 18px;
+}
+.profile-card .info span {
+  font-weight: bold;
+  color: #000;
+}
+
+/* Right Info Card */
+.info-card {
+  flex: 2;
+  width: 300px;
+  height: 500px;
+  background: #f1f6ff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.info-card h3 {
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 20px 0 10px 0;
+}
+.info-card img {
+  width: 20px;
+  height: 20px;
+}
+.row {
+  display: flex;
+  margin-bottom: 10px;
+}
+.label {
+  flex: 1;
+}
+.value {
+  flex: 2;
+}
+.label p,
+.value p {
+  font-size: 1em;
+  margin: 6px 0;
+}
+.value p {
+  color: #174d4d;
+}
